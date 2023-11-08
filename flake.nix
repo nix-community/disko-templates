@@ -3,8 +3,10 @@
 
   outputs = { self }: {
     templates = {
-      path = ./single-disk-ext4;
-      description = "Single disk ext4";
+      single-disk-ext4 = {
+        path = ./single-disk-ext4;
+        description = "Single disk ext4";
+      };
     };
   };
 }
