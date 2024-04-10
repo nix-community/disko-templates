@@ -6,7 +6,7 @@ Usage:
 
 ```
 nix flake init --template github:nix-community/disko-templates#single-disk-ext4
-wrote: /etc/nixos/disko.nix
+wrote: /etc/nixos/disk-config.nix
 ```
 
-Than import `disko.nix` in your `configuration.nix`.
+Than import `disk-config.nix` in your `configuration.nix`.
