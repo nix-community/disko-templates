@@ -10,3 +10,5 @@ wrote: /etc/nixos/disk-config.nix
 ```
 
 Then, import `disk-config.nix` in your `configuration.nix`.
+
+Checkout [flake.nix](flake.nix) for a list of all templates with descriptions.
