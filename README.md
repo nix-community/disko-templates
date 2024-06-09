@@ -4,11 +4,14 @@ Disko templates to copy into your project
 
 Usage:
 
+In a terminal first change into your nixos configuration directory and
+than run `nix flake init` with the preferred template
+
 ```
+cd /etc/nixos/
 nix flake init --template github:nix-community/disko-templates#single-disk-ext4
-wrote: /etc/nixos/disk-config.nix
 ```
 
-Then, import `disk-config.nix` in your `configuration.nix`.
+Then, import `disko-config.nix` in your `configuration.nix`.
 
 Checkout [flake.nix](flake.nix) for a list of all templates with descriptions.
