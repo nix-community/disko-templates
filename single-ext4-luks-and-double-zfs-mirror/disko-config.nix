@@ -1,9 +1,16 @@
+# USAGE in your configuration.nix.
+# Update devices to match your hardware.
+# {
+#   imports = [ ./disko-config.nix ];
+#   disko.devices.disk.root.device = "/dev/sda";
+#   disko.devices.disk.data1.device = "/dev/sdb";
+#   disko.devices.disk.data2.device = "/dev/sdc";
+# }
 {
   disko.devices = {
     disk = {
       root = {
         type = "disk";
-        device = "/dev/sda";
         content = {
           type = "gpt";
           partitions = {
@@ -37,7 +44,6 @@
       };
       data1 = {
         type = "disk";
-        device = "/dev/sdb";
         content = {
           type = "gpt";
           partitions = {
@@ -53,7 +59,6 @@
       };
       data2 = {
         type = "disk";
-        device = "/dev/sdc";
         content = {
           type = "gpt";
           partitions = {
