@@ -70,7 +70,7 @@
             type = "zfs_fs";
             mountpoint = "/";
             options."com.sun:auto-snapshot" = "false";
-            postCreateHook = "zfs snapshot zroot/local/root@blank";
+            postCreateHook = "zfs list -t snapshot -H -o name | grep -E '^zroot/local/root@blank$' || zfs snapshot zroot/local/root@blank";
           };
         };
       };
