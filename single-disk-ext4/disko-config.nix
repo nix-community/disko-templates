@@ -5,7 +5,7 @@
 #  disko.devices.disk.main.device = "/dev/sda";
 # }
 {
-  config.disko.devices = {
+  disko.devices = {
     disk = {
       main = {
         type = "disk";
