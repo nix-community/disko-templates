@@ -1,6 +1,6 @@
 # disko-templates
 
-Disko templates to copy into your project
+[Disko](https://github.com/nix-community/disko) templates to copy into your project
 
 Usage:
 
